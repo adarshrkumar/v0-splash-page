@@ -14,18 +14,17 @@ import {
 } from 'lucide-react'
 
 const interests = [
-  { label: 'Computer science', icon: Code2, color: 'coral' },
+  { label: 'Computer science & coding', icon: Code2, color: 'coral' },
   { label: 'Photography', icon: Camera, color: 'blue' },
-  { label: 'Music & sound', icon: Music2, color: 'yellow' },
-  { label: 'History & maps', icon: Globe2, color: 'green' },
+  { label: 'Music', icon: Music2, color: 'yellow' },
+  { label: 'History & geography', icon: Globe2, color: 'green' },
 ]
 
-const skills = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Astro', 'Node.js', 'Python', 'Git']
+const skills = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Astro', 'Node.js', 'Python', 'Git']
 
 const links = [
-  { label: 'Website', href: 'https://adarshrkumar.dev', icon: Globe2 },
-  { label: 'LinkedIn', href: 'https://linkedin.com', icon: ArrowUpRight },
-  { label: 'Email', href: 'mailto:hello@example.com', icon: Mail },
+  { label: 'Website', href: 'https://adarshrkumar.dev/', icon: Globe2 },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/adarshrkumar/', icon: ArrowUpRight },
 ]
 
 export default function Page() {
@@ -51,7 +50,7 @@ export default function Page() {
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-dot" /> Hello, I&apos;m Adarsh R. Kumar</p>
           <h1>I make the<br /><em>web feel human.</em></h1>
-          <p className="hero-description">A computer science student, developer, and photographer based in Santa Clara. I like turning curious ideas into thoughtful digital experiences.</p>
+          <p className="hero-description">An undergraduate sophomore studying computer science, building for the web, and making photographs in Santa Clara. Class of 2029.</p>
           <div className="hero-actions">
             <a href="#work" className="button button-dark">Explore my world <ArrowUpRight size={17} /></a>
             <a href="#about" className="text-link">A little more about me <span>↓</span></a>
