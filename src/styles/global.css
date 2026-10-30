@@ -62,6 +62,49 @@ a:hover, a:focus-visible { text-decoration: underline; }
   line-height: 1.6;
 }
 
+html[data-theme="paper"] {
+  --bg: #f3f0e8;
+  --surface: #faf8f2;
+  --text: #171717;
+  --muted: #66645f;
+  --line: #d2cec4;
+  --accent: #b13d2e;
+}
+
+html[data-theme="signal"] {
+  --bg: #071f1c;
+  --surface: #0b2e29;
+  --text: #e7fff5;
+  --muted: #9bc6b7;
+  --line: #22584d;
+  --accent: #ffc857;
+}
+
+.theme-panel {
+  border-top: 1px solid var(--line);
+  padding: 1.25rem 0 2rem;
+}
+
+.theme-panel h2 {
+  margin: 0 0 .75rem;
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.theme-controls { display: flex; flex-wrap: wrap; gap: .55rem; }
+.theme-controls button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  padding: .45rem .8rem;
+  font: inherit;
+  cursor: pointer;
+}
+.theme-controls button[aria-pressed="true"] { color: var(--bg); background: var(--accent); border-color: var(--accent); }
+
 footer {
   display: flex;
   flex-wrap: wrap;
