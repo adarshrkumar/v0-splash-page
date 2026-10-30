@@ -30,7 +30,16 @@ main p,main strong,main h2,main h3{color:#f2eee7!important}
 </style><style>
 button, a.button, a.action, .links a { min-height: 44px; padding: .8rem 1.15rem; display: inline-flex; align-items: center; justify-content: center; line-height: 1.1; }
 button { min-width: 92px; }
-</style></head>
+</style><style>
+  a, button { transition: transform .22s cubic-bezier(.2,.8,.2,1), box-shadow .22s ease, background-color .22s ease, color .22s ease; }
+  a:hover, button:hover { transform: translateY(-3px) rotate(-1deg); }
+  a:active, button:active { transform: translateY(0) scale(.97); }
+  .links a:hover { box-shadow: 5px 5px 0 #ff7058; }
+  .skill:hover { transform: translateY(-4px) rotate(2deg); box-shadow: 3px 3px 0 #ff7058; }
+  .card, .note, .intro-card { transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease; }
+  .card:hover, .note:hover, .intro-card:hover { transform: translateY(-6px) rotate(.6deg); box-shadow: 10px 10px 0 rgba(255,112,88,.5); }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+</style><style>.links{display:flex;flex-direction:column;gap:12px;align-items:stretch}.links a{display:flex;align-items:center;justify-content:space-between;box-sizing:border-box;width:210px;min-height:54px;padding:0 18px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:#17252d;color:#ff7650!important;text-decoration:none;transition:transform .22s ease,background .22s ease,border-color .22s ease}.links a:hover{transform:translateX(8px) rotate(-1deg);background:#21343e;border-color:#ff7650}.links a:focus-visible{outline:3px solid #ff7650;outline-offset:4px}@media(max-width:640px){.links a{width:100%;min-height:52px}}</style><style>.links a{animation:button-in .6s both}.links a:nth-child(2){animation-delay:.1s}.tag{transition:transform .2s ease,background .2s ease;border-radius:999px}.tag:hover{transform:translateY(-5px) rotate(-2deg);background:#243943!important}.orb{animation:drift 7s ease-in-out infinite;transform-origin:center}.intro h1 span{display:inline-block;transition:transform .35s cubic-bezier(.2,.8,.2,1)}.intro h1 span:hover{transform:skewX(-7deg) translateX(8px)}@keyframes button-in{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:none}}@keyframes drift{0%,100%{transform:rotate(-5deg) translateY(0)}50%{transform:rotate(6deg) translateY(-10px)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}</style></head>
 <body>
 <div class="wrap">
 
