@@ -35,7 +35,7 @@ export default function Page() {
   return (
     <main className="site-shell">
       <header className="site-header">
-        <a className="monogram" href="#top" aria-label="Back to top">AR<span>.</span></a>
+        <a className="monogram" href="#top" aria-label="Back to top">ARK<span>.</span></a>
         <nav className={menuOpen ? 'nav-links nav-open' : 'nav-links'} aria-label="Main navigation">
           <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
           <a href="#work" onClick={() => setMenuOpen(false)}>What I do</a>
@@ -49,7 +49,7 @@ export default function Page() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow"><span className="eyebrow-dot" /> Hello, I&apos;m Adarsh</p>
+          <p className="eyebrow"><span className="eyebrow-dot" /> Hello, I&apos;m Adarsh R. Kumar</p>
           <h1>I make the<br /><em>web feel human.</em></h1>
           <p className="hero-description">A computer science student, developer, and photographer based in Santa Clara. I like turning curious ideas into thoughtful digital experiences.</p>
           <div className="hero-actions">
@@ -62,7 +62,7 @@ export default function Page() {
           <div className="art-sun" />
           <div className="art-frame"><div className="art-person"><div className="art-head" /><div className="art-body" /></div></div>
           <p className="art-caption">curious by nature<br /><span>always building</span></p>
-          <div className="art-stamp">SCU<br /><span>’24</span></div>
+          <div className="art-stamp">ARK<br /><span>AK</span></div>
         </div>
       </section>
 
@@ -80,7 +80,7 @@ export default function Page() {
 
       <section className="skills-section section"><div className="skills-heading"><div className="section-label">03 / In the toolkit</div><Palette size={23} /></div><div className="skills-row">{skills.map(skill => <span key={skill} className="skill-pill">{skill}</span>)}</div></section>
 
-      <footer className="footer" id="contact"><div><p className="eyebrow"><span className="eyebrow-dot" /> Have an idea?</p><h2>Let&apos;s make<br /><em>something nice.</em></h2></div><div className="footer-right"><a href="mailto:hello@example.com" className="footer-email">hello@example.com <ArrowUpRight size={18} /></a><div className="social-links">{links.map(({ label, href, icon: Icon }) => <a href={href} key={label} aria-label={label}><Icon size={18} /></a>)}</div><p className="copyright">© 2026 Adarsh R. Kumar<br />Made with care & curiosity.</p></div></footer>
+      <footer className="footer" id="contact"><div><p className="eyebrow"><span className="eyebrow-dot" /> Have an idea?</p><h2>Let&apos;s make<br /><em>something nice.</em></h2></div><div className="footer-right"><a href="mailto:hello@example.com" className="footer-email">hello@example.com <ArrowUpRight size={18} /></a><div className="social-links">{links.map(({ label, href, icon: Icon }) => <a href={href} key={label} aria-label={label}><Icon size={18} /></a>)}</div><p className="copyright">© 2026 Adarsh R. Kumar<br />AK / ARK · Made with care & curiosity.</p></div></footer>
     </main>
   )
 }
