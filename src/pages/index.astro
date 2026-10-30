@@ -49,28 +49,11 @@ import '../styles/global.css';
         </div>
       </section>
 
-      <section class="theme-panel" aria-labelledby="theme-title">
-        <h2 id="theme-title">Change the mood</h2>
-        <div class="theme-controls" role="group" aria-label="Choose a theme">
-          <button type="button" data-theme="ink" aria-pressed="true">Ink</button>
-          <button type="button" data-theme="paper" aria-pressed="false">Paper</button>
-          <button type="button" data-theme="signal" aria-pressed="false">Signal</button>
-        </div>
-      </section>
-
       <footer>
         <a href="https://adarshrkumar.dev">adarshrkumar.dev</a>
         <span>© 2025 Adarsh R. Kumar</span>
       </footer>
 
-      <script>
-        const buttons = document.querySelectorAll('[data-theme]');
-        buttons.forEach((button) => button.addEventListener('click', () => {
-          const theme = button.dataset.theme;
-          document.documentElement.dataset.theme = theme;
-          buttons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
-        }));
-      </script>
     </main>
   </body>
 </html>
