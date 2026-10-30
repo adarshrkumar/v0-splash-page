@@ -4,14 +4,13 @@
   "private": true,
   "packageManager": "pnpm@12.3.4",
   "scripts": {
-    "dev": "astro dev --port 3000",
-    "build": "astro build",
-    "start": "astro preview"
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@base-ui/react": "^1.5.0",
     "@vercel/analytics": "1.6.1",
-    "astro": "^7.4.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.16.0",
