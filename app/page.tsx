@@ -3,10 +3,8 @@
 import { useState } from 'react'
 import {
   ArrowUpRight,
-  Camera,
   Code2,
   Globe2,
-  Mail,
   Menu,
   Music2,
   Palette,
@@ -15,7 +13,6 @@ import {
 
 const interests = [
   { label: 'Computer science & coding', icon: Code2, color: 'coral' },
-  { label: 'Photography', icon: Camera, color: 'blue' },
   { label: 'Music', icon: Music2, color: 'yellow' },
   { label: 'History & geography', icon: Globe2, color: 'green' },
 ]
@@ -50,7 +47,7 @@ export default function Page() {
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-dot" /> Hello, I&apos;m Adarsh R. Kumar</p>
           <h1>I make the<br /><em>web feel human.</em></h1>
-          <p className="hero-description">An undergraduate sophomore studying computer science, building for the web, and making photographs in Santa Clara. Class of 2029.</p>
+          <p className="hero-description">An undergraduate sophomore studying computer science and building for the web in Santa Clara. Class of 2029.</p>
           <div className="hero-actions">
             <a href="#work" className="button button-dark">Explore my world <ArrowUpRight size={17} /></a>
             <a href="#about" className="text-link">A little more about me <span>↓</span></a>
@@ -65,11 +62,11 @@ export default function Page() {
         </div>
       </section>
 
-      <div className="ticker" aria-hidden="true"><div className="ticker-track">DEVELOPER <span>✳</span> PHOTOGRAPHER <span>✳</span> MUSIC LOVER <span>✳</span> HISTORY NERD <span>✳</span> DEVELOPER <span>✳</span> PHOTOGRAPHER <span>✳</span></div></div>
+      <div className="ticker" aria-hidden="true"><div className="ticker-track">DEVELOPER <span>✳</span> MUSIC LOVER <span>✳</span> HISTORY NERD <span>✳</span> DEVELOPER <span>✳</span> PHOTOGRAPHER <span>✳</span></div></div>
 
       <section className="about-section section" id="about">
         <div className="section-label">01 / About</div>
-        <div className="about-content"><h2>Not just a<br /><span>screen person.</span></h2><div className="about-text"><p>I&apos;m fascinated by the intersection of logic and feeling — where clean code meets a good story, and where a useful product still has a little soul.</p><p>When I&apos;m not shipping websites, you&apos;ll probably find me chasing light with a camera, listening to a new record, or getting lost in a map.</p><a href="#contact" className="inline-arrow">More about me <ArrowUpRight size={16} /></a></div></div>
+        <div className="about-content"><h2>Not just a<br /><span>screen person.</span></h2><div className="about-text"><p>I&apos;m fascinated by the intersection of logic and feeling — where clean code meets a good story, and where a useful product still has a little soul.</p><p>When I&apos;m not shipping websites, you&apos;ll probably find me listening to a new record or getting lost in a map.</p><a href="#contact" className="inline-arrow">More about me <ArrowUpRight size={16} /></a></div></div>
       </section>
 
       <section className="work-section section" id="work">
